@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 tmux set -g default-terminal "screen-256color"
 tmux set -ga terminal-overrides ",*256col*:Tc"
+set -g terminal-features "xterm-256color:RGB"
 
 tmux set -g mode-style "fg=#7aa2f7,bg=#3b4261"
 tmux set -g message-style "fg=#7aa2f7,bg=#3b4261"
