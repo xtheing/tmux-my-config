@@ -36,7 +36,7 @@ tmux setw -g window-status-activity-style "underscore,fg=#a9b1d6,bg=#16161e"
 tmux setw -g window-status-separator ""
 tmux setw -g window-status-style "NONE,fg=#a9b1d6,bg=#16161e"
 tmux setw -g window-status-format "#[fg=#16161e,bg=#16161e,nobold,nounderscore,noitalics]#[default]#I #W #[fg=#16161e,bg=#16161e,nobold,nounderscore,noitalics] "
-tmux setw -g window-status-current-format "#[fg=#16161e,bg=#3b4261,nobold,nounderscore,noitalics]#[fg=#7aa2f7,bg=#3b4261,bold] #I  #W #F #[fg=#3b4261,bg=#16161e,nobold,nounderscore,noitalics]"
+tmux setw -g window-status-current-format "#[fg=#16161e,bg=#3b4261,nobold,nounderscore,noitalics]#[fg=#7aa2f7,bg=#3b4261,bold] #I #W #[fg=#3b4261,bg=#16161e,nobold,nounderscore,noitalics]"
 
 tmux set -g mouse on
 tmux set -g base-index 1
