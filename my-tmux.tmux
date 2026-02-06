@@ -48,15 +48,15 @@ tmux set -sg escape-time 1
 tmux set -g statkus-interval 1
 
 # ========== 快捷键绑定 ==========
-bind -n M-1 select-window -t 1
-bind -n M-2 select-window -t 2
-bind -n M-3 select-window -t 3
-bind -n M-4 select-window -t 4
-bind -n M-5 select-window -t 5
-bind -n M-6 select-window -t 6
-bind -n M-7 select-window -t 7
-bind -n M-8 select-window -t 8
-bind -n M-9 select-window -t 9
-bind -n M-0 select-window -t 10
+tmux bind -n M-1 select-window -t 1
+tmux bind -n M-2 select-window -t 2
+tmux bind -n M-3 select-window -t 3
+tmux bind -n M-4 select-window -t 4
+tmux bind -n M-5 select-window -t 5
+tmux bind -n M-6 select-window -t 6
+tmux bind -n M-7 select-window -t 7
+tmux bind -n M-8 select-window -t 8
+tmux bind -n M-9 select-window -t 9
+tmux bind -n M-0 select-window -t 10
 
 tmux bind-key r run-shell "tmux source-file ~/.tmux.conf \; display '配置已重新加载!'"
